@@ -19,7 +19,7 @@
             echo $this->Form->control('vencimento');
             echo $this->Form->control('criacao');
             echo $this->Form->control('aprovacao');
-            echo $this->Form->control('user_id', ['options' => $users]);
+            echo $this->Form->input('user_id', ['options' => $users]);
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>
