@@ -17,10 +17,12 @@
         <thead>
             <tr>
                 <th scope="col"><?= $this->Paginator->sort('id') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('vencimento') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('criacao') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('aprovacao') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('user_id') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('boleto_id') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('recibo_id') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('vencimento') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('pagamento') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('aproved') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
             </tr>
         </thead>
@@ -28,10 +30,12 @@
             <?php foreach ($comprovantes as $comprovante): ?>
             <tr>
                 <td><?= $this->Number->format($comprovante->id) ?></td>
-                <td><?= h($comprovante->vencimento) ?></td>
-                <td><?= h($comprovante->criacao) ?></td>
-                <td><?= h($comprovante->aprovacao) ?></td>
                 <td><?= $comprovante->has('user') ? $this->Html->link($comprovante->user->id, ['controller' => 'Users', 'action' => 'view', $comprovante->user->id]) : '' ?></td>
+                <td><?= $this->Number->format($comprovante->boleto_id) ?></td>
+                <td><?= $this->Number->format($comprovante->recibo_id) ?></td>
+                <td><?= h($comprovante->vencimento) ?></td>
+                <td><?= h($comprovante->pagamento) ?></td>
+                <td><?= h($comprovante->aproved) ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $comprovante->id]) ?>
                     <?= $this->Html->link(__('Edit'), ['action' => 'edit', $comprovante->id]) ?>

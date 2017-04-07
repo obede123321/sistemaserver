@@ -37,6 +37,17 @@ class AppController extends Controller
      *
      * @return void
      */
+      public function isAuthorized($user) 
+        {
+            // admin can access every action 
+                if (isset($user['role']) && $user['role'] === 'servidor') {
+                    return true;
+                }
+
+                // Default deny
+                return false;
+        }
+        
     public function initialize()
     {
         parent::initialize();
@@ -81,3 +92,5 @@ class AppController extends Controller
         }
     }
 }
+
+    

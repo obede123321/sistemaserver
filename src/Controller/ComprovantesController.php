@@ -16,6 +16,19 @@ class ComprovantesController extends AppController
      *
      * @return \Cake\Network\Response|null
      */
+    public function isAuthorized($user)
+    {
+    if ($this->request->action === 'add') {
+        return true;
+    }
+    if (in_array($this->request->action, ['edit', 'delete'])) {
+        $comprovanteId = (int)$this->request->params['pass'][0];
+        if ($this->comprovantes->isOwnedBy($comprovanteId, $user['id'])) {
+            return true;
+      }
+    }
+    return parent::isAuthorized($user);
+}
     public function index()
     {
         $this->paginate = [
@@ -54,6 +67,7 @@ class ComprovantesController extends AppController
         $comprovante = $this->Comprovantes->newEntity();
         if ($this->request->is('post')) {
             $comprovante = $this->Comprovantes->patchEntity($comprovante, $this->request->getData());
+            $comprovante->users_id = $this->Auth->user(id);
             if ($this->Comprovantes->save($comprovante)) {
                 $this->Flash->success(__('The comprovante has been saved.'));
 

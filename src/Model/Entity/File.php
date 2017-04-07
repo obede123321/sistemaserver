@@ -4,19 +4,16 @@ namespace App\Model\Entity;
 use Cake\ORM\Entity;
 
 /**
- * Comprovante Entity
+ * File Entity
  *
  * @property int $id
- * @property int $user_id
- * @property int $boleto_id
- * @property int $recibo_id
- * @property \Cake\I18n\Time $vencimento
- * @property \Cake\I18n\Time $pagamento
- * @property bool $aproved
- *
- * @property \App\Model\Entity\User $user
+ * @property string $name
+ * @property string $path
+ * @property \Cake\I18n\Time $created
+ * @property \Cake\I18n\Time $modificacao
+ * @property bool $status
  */
-class Comprovante extends Entity
+class File extends Entity
 {
 
     /**

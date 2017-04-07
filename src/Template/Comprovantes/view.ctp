@@ -26,16 +26,24 @@
             <td><?= $this->Number->format($comprovante->id) ?></td>
         </tr>
         <tr>
+            <th scope="row"><?= __('Boleto Id') ?></th>
+            <td><?= $this->Number->format($comprovante->boleto_id) ?></td>
+        </tr>
+        <tr>
+            <th scope="row"><?= __('Recibo Id') ?></th>
+            <td><?= $this->Number->format($comprovante->recibo_id) ?></td>
+        </tr>
+        <tr>
             <th scope="row"><?= __('Vencimento') ?></th>
             <td><?= h($comprovante->vencimento) ?></td>
         </tr>
         <tr>
-            <th scope="row"><?= __('Criacao') ?></th>
-            <td><?= h($comprovante->criacao) ?></td>
+            <th scope="row"><?= __('Pagamento') ?></th>
+            <td><?= h($comprovante->pagamento) ?></td>
         </tr>
         <tr>
-            <th scope="row"><?= __('Aprovacao') ?></th>
-            <td><?= $comprovante->aprovacao ? __('Yes') : __('No'); ?></td>
+            <th scope="row"><?= __('Aproved') ?></th>
+            <td><?= $comprovante->aproved ? __('Yes') : __('No'); ?></td>
         </tr>
     </table>
 </div>

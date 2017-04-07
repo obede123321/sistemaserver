@@ -16,10 +16,12 @@
     <fieldset>
         <legend><?= __('Add Comprovante') ?></legend>
         <?php
+            echo $this->Form->control('user_id', ['options' => $users]);
+            echo $this->Form->control('boleto_id', ['type'=>'file']);
+            echo $this->Form->control('recibo_id', ['type'=>'file']);
             echo $this->Form->control('vencimento');
-            echo $this->Form->control('criacao');
-            echo $this->Form->control('aprovacao');
-            echo $this->Form->input('user_id', ['options' => $users]);
+            echo $this->Form->control('pagamento');
+            echo $this->Form->control('aproved');
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>
