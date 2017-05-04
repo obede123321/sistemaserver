@@ -16,7 +16,7 @@ use Cake\ORM\Entity;
  *
  * @property \App\Model\Entity\User $user
  */
-class Comprovante extends Entity
+class Comprovantes extends Entity
 {
 
     /**

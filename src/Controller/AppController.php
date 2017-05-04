@@ -53,6 +53,7 @@ class AppController extends Controller
         parent::initialize();
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
+        $this->loadComponent('Upload');
         $this->loadComponent('Auth', [
             'loginRedirect' => [
                 'controller' => 'comprovantes',
@@ -71,6 +72,12 @@ class AppController extends Controller
          */
         //$this->loadComponent('Security');
         //$this->loadComponent('Csrf');
+    }
+    public function upload()
+    {
+        if( !empty( $this->request->data )) {
+            $this->Upload->send($this->request->data['uploadfile']);
+        }
     }
     public function beforeFilter(Event $event)
         {
