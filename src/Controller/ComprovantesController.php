@@ -3,6 +3,7 @@ namespace App\Controller;
 
 use App\Controller\AppController;
 use App\Controller\Files;
+use Cake\Event\Event;
 use App\Controller\Comprovantes;
 
 /**
@@ -13,6 +14,7 @@ use App\Controller\Comprovantes;
 class ComprovantesController extends AppController
 {
     public function initialize(){
+        parent::initialize();
         $this->loadModel('Files');
     }
     /**
@@ -61,7 +63,7 @@ class ComprovantesController extends AppController
         if ($this->request->is('post')) {
              if(!empty($this->request->data['recibo_id']['name'])){
                 $fileName = $this->request->data['recibo_id']['name'];
-                $uploadPath = WWW_ROOT.'uploads/files';
+                $uploadPath = WWW_ROOT.'Uploads/files/';
                 $uploadFile = $uploadPath.$fileName;
 
                 if(move_uploaded_file($this->request->data['recibo_id']['tmp_name'],$uploadFile)){
@@ -69,17 +71,18 @@ class ComprovantesController extends AppController
                     $recibo_id->name = $fileName;
                     $recibo_id->path = $uploadPath;
                     $recibo_id->created = date("Y-m-d H:i:s");
-                    $recibo_id->modified = date("Y-m-d H:i:s");
-
+                    $recibo_id->modificacao = date("Y-m-d H:i:s");
+                    $recibo_id->status = 0;
                     if ($this->Files->save($recibo_id)) {
                         $comprovante->recibo_id =  $recibo_id->id;
                         $this->Flash->success(__('File has been uploaded and inserted successfully.'));
                     }else{
                         $this->Flash->error(__('Unable to upload file, please try again.'));
                     }
-                }else{
-                    $this->Flash->error(__('Unable to upload file, please try again.'));
                 }
+                // else{
+                //     $this->Flash->error(__('Unable to upload file, please try again.'));
+                // }
                  return $this->redirect(['action' => 'index']);
             }
         
@@ -116,10 +119,10 @@ class ComprovantesController extends AppController
             }
             $this->Flash->error(__('The comprovante could not be saved. Please, try again.'));
         }
-        $users = $this->Comprovantes->Users->find('list', ['limit' => 200]);
-        $files = $this->Comprovantes->Files->find('list', ['limit' => 200]);
-        $this->set(compact('comprovante', 'users', 'files'));
-        $this->set('_serialize', ['comprovante']);
+        // $users = $this->Comprovantes->Users->find('list', ['limit' => 200]);
+        // $files = $this->Comprovantes->Files->find('list', ['limit' => 200]);
+        // $this->set(compact('comprovante', 'users', 'files'));
+        // $this->set('_serialize', ['comprovante']);
     }
 
 
@@ -142,5 +145,6 @@ class ComprovantesController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
+    
   
 }
