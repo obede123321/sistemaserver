@@ -12,6 +12,8 @@
         <li><?= $this->Html->link(__('New Comprovante'), ['action' => 'add']) ?> </li>
         <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('List Files'), ['controller' => 'Files', 'action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('New File'), ['controller' => 'Files', 'action' => 'add']) ?> </li>
     </ul>
 </nav>
 <div class="comprovantes view large-9 medium-8 columns content">
@@ -22,16 +24,20 @@
             <td><?= $comprovante->has('user') ? $this->Html->link($comprovante->user->id, ['controller' => 'Users', 'action' => 'view', $comprovante->user->id]) : '' ?></td>
         </tr>
         <tr>
+            <th scope="row"><?= __('File') ?></th>
+            <td><?= $comprovante->has('file') ? $this->Html->link($comprovante->file->name, ['controller' => 'Files', 'action' => 'view', $comprovante->file->id]) : '' ?></td>
+        </tr>
+        <tr>
             <th scope="row"><?= __('Id') ?></th>
             <td><?= $this->Number->format($comprovante->id) ?></td>
         </tr>
-        <tr>
+        <!-- <tr>
             <th scope="row"><?= __('Boleto Id') ?></th>
             <td><?= $this->Number->format($comprovante->boleto_id) ?></td>
-        </tr>
+        </tr> -->
         <tr>
             <th scope="row"><?= __('Recibo Id') ?></th>
-            <td><?= $this->Number->format($comprovante->recibo_id) ?></td>
+            <td><?= $this->Number->format($comprovante->boleto_id) ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Vencimento') ?></th>

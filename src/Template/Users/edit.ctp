@@ -24,7 +24,7 @@
             echo $this->Form->control('nome', ['placeholder'=>'nome']);
             echo $this->Form->control('email', ['placeholder'=>'email']);
             echo $this->Form->control('username', ['placeholder'=>'username']);
-            echo $this->Form->control('password', ['placeholder'=>'password']);
+            // echo $this->Form->control('password', ['placeholder'=>'password']);
             echo $this->Form->control('plano', ['placeholder'=>'plano']);
             // echo $this->Form->control('role');
         ?>

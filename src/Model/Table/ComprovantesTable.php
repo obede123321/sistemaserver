@@ -10,8 +10,8 @@ use Cake\Validation\Validator;
  * Comprovantes Model
  *
  * @property \Cake\ORM\Association\BelongsTo $Users
- * @property \Cake\ORM\Association\BelongsTo $Files
- * @property \Cake\ORM\Association\BelongsTo $Files
+ * @property \Cake\ORM\Association\BelongsTo $Boletos
+ * @property \Cake\ORM\Association\BelongsTo $Recibos
  *
  * @method \App\Model\Entity\Comprovante get($primaryKey, $options = [])
  * @method \App\Model\Entity\Comprovante newEntity($data = null, array $options = [])
@@ -43,13 +43,10 @@ class ComprovantesTable extends Table
             'joinType' => 'INNER'
         ]);
         $this->belongsTo('Files', [
-            'foreignKey' => 'boleto_id',
-            'joinType' => 'INNER'
-        ]);
-        $this->belongsTo('Files', [
             'foreignKey' => 'recibo_id',
             'joinType' => 'INNER'
         ]);
+
     }
 
     /**
@@ -92,8 +89,8 @@ class ComprovantesTable extends Table
     public function buildRules(RulesChecker $rules)
     {
         $rules->add($rules->existsIn(['user_id'], 'Users'));
-        $rules->add($rules->existsIn(['boleto_id'], 'Files'));
-        $rules->add($rules->existsIn(['recibo_id'], 'Files'));
+        $rules->add($rules->existsIn(['boleto_id'], 'Boletos'));
+        $rules->add($rules->existsIn(['recibo_id'], 'Recibos'));
 
         return $rules;
     }

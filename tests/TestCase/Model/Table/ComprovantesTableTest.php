@@ -25,7 +25,8 @@ class ComprovantesTableTest extends TestCase
      */
     public $fixtures = [
         'app.comprovantes',
-        'app.users'
+        'app.users',
+        'app.files'
     ];
 
     /**

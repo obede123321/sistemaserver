@@ -53,37 +53,33 @@ class AppController extends Controller
         parent::initialize();
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
-        $this->loadComponent('Upload');
+        // $this->loadComponent('Upload');
         $this->loadComponent('Auth', [
             'loginRedirect' => [
                 'controller' => 'comprovantes',
                 'action' => 'index'
             ],
             'logoutRedirect' => [
-                'controller' => 'Pages',
+                'controller' => 'login',
                 'action' => 'display',
                 'home'
             ]
         ]);
 
+    }
         /*
          * Enable the following components for recommended CakePHP security settings.
          * see http://book.cakephp.org/3.0/en/controllers/components/security.html
          */
         //$this->loadComponent('Security');
         //$this->loadComponent('Csrf');
-    }
-    public function upload()
-    {
-        if( !empty( $this->request->data )) {
-            $this->Upload->send($this->request->data['uploadfile']);
-        }
-    }
-    public function beforeFilter(Event $event)
-        {
-                $this->Auth->allow(['index', 'view', 'display']);
-        }
-
+    // public function upload()
+    // {
+    //     if( !empty( $this->request->data )) {
+    //         $this->Upload->send($this->request->data['uploadfile']);
+    //     }
+    // }
+   
     /**
      * Before render callback.
      *
@@ -98,6 +94,11 @@ class AppController extends Controller
             $this->set('_serialize', true);
         }
     }
+     public function beforeFilter(Event $event)
+        {
+                $this->Auth->allow(['index', 'view', 'display']);
+        }
+
 }
 
     

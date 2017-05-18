@@ -17,7 +17,8 @@ class ComprovantesControllerTest extends IntegrationTestCase
      */
     public $fixtures = [
         'app.comprovantes',
-        'app.users'
+        'app.users',
+        'app.files'
     ];
 
     /**

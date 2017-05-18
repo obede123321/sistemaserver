@@ -15,6 +15,8 @@
         <li><?= $this->Html->link(__('List Comprovantes'), ['action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List Files'), ['controller' => 'Files', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New File'), ['controller' => 'Files', 'action' => 'add']) ?></li>
     </ul>
 </nav>
 <div class="comprovantes form large-9 medium-8 columns content">
@@ -22,12 +24,12 @@
     <fieldset>
         <legend><?= __('Edit Comprovante') ?></legend>
         <?php
-            echo $this->Form->control('user_id', ['options' => $users]);
-            echo $this->Form->control('boleto_id');
-            echo $this->Form->control('recibo_id');
             echo $this->Form->control('vencimento');
             echo $this->Form->control('pagamento');
             echo $this->Form->control('aproved');
+            echo $this->Form->control('user_id', ['options' => $users]);
+            // echo $this->Form->control('boleto_id');
+            echo $this->Form->control('recibo_id', ['options' => $files]);
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

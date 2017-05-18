@@ -318,13 +318,13 @@ pre {
     margin-right: 9px;
 }
 
-.top-bar.expanded .title-area {
+/*.top-bar.expanded .title-area {
     background: #01545b;
 }
-
+*//*
 .top-bar.expanded, .top-bar,.top-bar-section ul li,.top-bar-section li:not(.has-form) a:not(.button) {
     background: #116d76;
-}
+}*/
 
 .top-bar-section li:not(.has-form) a:not(.button):hover {
     background-color: #308e97;
@@ -401,13 +401,13 @@ fieldset legend {
 }
 
 .form button:hover, .form button:focus {
-    background: #BE840B;
+   /* background: #BE840B;*/
     box-shadow: none;
 }
 
-button {
+/*button {
     background: #966600;
-}
+}*/
 
 div.message {
     text-align: center;
@@ -488,8 +488,8 @@ div.message.hidden {
 /* Force equal height by overflowing */
 .content,
 #actions-sidebar {
-    margin-bottom: -99999px;
-    padding-bottom: 99999px;
+    margin-bottom: -120px;
+    padding-bottom: 732px;
 }
 @media(max-width: 640px) {
     #actions-sidebar {

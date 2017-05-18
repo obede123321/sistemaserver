@@ -1,8 +1,8 @@
 <?php 
-namespace App\Controller\Component;
+namespace App\Controller\component;
 
-use Cake\Controller\Component;
-use Cake\Controller\ComponentRegistry;
+use Cake\Controller\component;
+use Cake\Controller\componentRegistry;
 use Cake\Network\Exception\InternalErralErrorException;
 use Cake\Utility\Text;
 use Cake\ORM\TableRegistry;
@@ -28,15 +28,15 @@ class UploadComponent extends Component
 				if( !in_array(substr(strrchr($filename , '.') , 1) , $allowed)) {
 					throw new InternalErrorException("Error Processing Request.", 1);
 
-				}else if(is_uploaded_file($file_tmp_name)){
-					$filename = Text::uuid().'-'.$filename;
+				}elseif( is_uploaded_file($file_tmp_name)){
+		
 
-					$filedb = TableRegistry::get('Comprovante');
+					$filedb = TableRegistry::get('File');
 					$entity = $filedb->newEntity();
 					$entity->filename = $filename;
 					$filedb->save($entity);
 
-					move_uploaded_file($file_tmp_name, $dir.DS.$filename );
+					move_uploaded_file($file_tmp_name, $dir.DS.Text::uuid().'-'.$filename);
 				}
 			}
 		}

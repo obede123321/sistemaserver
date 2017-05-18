@@ -2,8 +2,8 @@
 namespace App\Controller;
 
 // use Cake\Event\Event;
-use App\Controller\AppController;
 use Cake\Event\Event;
+use App\Controller\AppController;
 
 /**
  * Users Controller
