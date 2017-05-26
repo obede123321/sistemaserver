@@ -1,11 +1,11 @@
 <?php
 namespace App\Model\Table;
 
+
 use Cake\ORM\Query;
 use Cake\ORM\RulesChecker;
 use Cake\ORM\Table;
 use Cake\Validation\Validator;
-
 /**
  * Comprovantes Model
  *
@@ -33,7 +33,7 @@ class ComprovantesTable extends Table
     public function initialize(array $config)
     {
         parent::initialize($config);
-
+        $this->addBehavior('Timestamp');
         $this->setTable('comprovantes');
         $this->setDisplayField('id');
         $this->setPrimaryKey('id');
@@ -88,9 +88,9 @@ class ComprovantesTable extends Table
      */
     public function buildRules(RulesChecker $rules)
     {
-        $rules->add($rules->existsIn(['user_id'], 'Users'));
-        $rules->add($rules->existsIn(['boleto_id'], 'Boletos'));
-        $rules->add($rules->existsIn(['recibo_id'], 'Recibos'));
+        $rules->add($rules->existsIn(['user_id'], 'files'));
+        // $rules->add($rules->existsIn(['boleto_id'], 'Boletos'));
+        $rules->add($rules->existsIn(['recibo_id'], 'Users'));
 
         return $rules;
     }

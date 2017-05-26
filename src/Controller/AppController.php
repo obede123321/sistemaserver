@@ -93,10 +93,10 @@ class AppController extends Controller
             $this->set('_serialize', true);
         }
     }
-     public function beforeFilter(Event $event)
-        {
-              $this->Auth->allow(['index', 'view', 'display']);
-        }
+     // public function beforeFilter(Event $event)
+     //    {
+     //          $this->Auth->allow(['index', 'view', 'display']);
+     //    }
 
 }
 

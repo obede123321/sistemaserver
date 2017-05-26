@@ -14399,3 +14399,1294 @@ Stack Trace:
 2017-05-18 20:11:09 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
 2017-05-18 20:11:41 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
 2017-05-18 20:12:16 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 20:20:45 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 20:21:46 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 20:22:38 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 20:22:48 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 20:22:48 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 20:33:34 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 20:33:39 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 20:33:39 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 20:33:39 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 20:33:39 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 20:33:40 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 20:33:40 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 20:33:40 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 20:33:40 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 20:35:04 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 20:35:14 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 20:35:14 Error: [RuntimeException] ExistsIn rule for 'boleto_id' is invalid. 'Boletos' is not associated with 'App\Model\Table\ComprovantesTable'.
+Request URL: /comprovantes/add
+Referer URL: http://localhost:8765/comprovantes/add
+Stack Trace:
+#0 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RuleInvoker.php(115): Cake\ORM\Rule\ExistsIn->__invoke(Object(App\Model\Entity\Comprovante), Array)
+#1 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(298): Cake\Datasource\RuleInvoker->__invoke(Object(App\Model\Entity\Comprovante), Array)
+#2 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(255): Cake\Datasource\RulesChecker->_checkRules(Object(App\Model\Entity\Comprovante), Array, Array)
+#3 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(231): Cake\Datasource\RulesChecker->checkCreate(Object(App\Model\Entity\Comprovante), Array)
+#4 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesAwareTrait.php(66): Cake\Datasource\RulesChecker->check(Object(App\Model\Entity\Comprovante), 'create', Array)
+#5 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1784): Cake\ORM\Table->checkRules(Object(App\Model\Entity\Comprovante), 'create', Object(ArrayObject))
+#6 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1723): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Comprovante), Object(ArrayObject))
+#7 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1446): Cake\ORM\Table->Cake\ORM\{closure}()
+#8 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Database/Connection.php(680): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#9 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1447): Cake\Database\Connection->transactional(Object(Closure))
+#10 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1724): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#11 /home/obd/systemrecp/src/Controller/ComprovantesController.php(90): Cake\ORM\Table->save(Object(App\Model\Entity\Comprovante))
+#12 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\ComprovantesController->add()
+#13 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#14 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ComprovantesController))
+#15 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 /home/obd/systemrecp/webroot/index.php(37): Cake\Http\Server->run()
+#26 {main}
+
+
+2017-05-18 20:43:20 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 20:43:20 Error: [RuntimeException] ExistsIn rule for 'boleto_id' is invalid. 'Boletos' is not associated with 'App\Model\Table\ComprovantesTable'.
+Request URL: /comprovantes/add
+Referer URL: http://localhost:8765/comprovantes/add
+Stack Trace:
+#0 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RuleInvoker.php(115): Cake\ORM\Rule\ExistsIn->__invoke(Object(App\Model\Entity\Comprovante), Array)
+#1 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(298): Cake\Datasource\RuleInvoker->__invoke(Object(App\Model\Entity\Comprovante), Array)
+#2 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(255): Cake\Datasource\RulesChecker->_checkRules(Object(App\Model\Entity\Comprovante), Array, Array)
+#3 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(231): Cake\Datasource\RulesChecker->checkCreate(Object(App\Model\Entity\Comprovante), Array)
+#4 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesAwareTrait.php(66): Cake\Datasource\RulesChecker->check(Object(App\Model\Entity\Comprovante), 'create', Array)
+#5 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1784): Cake\ORM\Table->checkRules(Object(App\Model\Entity\Comprovante), 'create', Object(ArrayObject))
+#6 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1723): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Comprovante), Object(ArrayObject))
+#7 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1446): Cake\ORM\Table->Cake\ORM\{closure}()
+#8 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Database/Connection.php(680): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#9 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1447): Cake\Database\Connection->transactional(Object(Closure))
+#10 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1724): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#11 /home/obd/systemrecp/src/Controller/ComprovantesController.php(90): Cake\ORM\Table->save(Object(App\Model\Entity\Comprovante))
+#12 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\ComprovantesController->add()
+#13 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#14 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ComprovantesController))
+#15 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 /home/obd/systemrecp/webroot/index.php(37): Cake\Http\Server->run()
+#26 {main}
+
+
+2017-05-18 20:48:26 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 20:51:45 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 22:33:04 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 22:33:12 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 22:35:46 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:17:45 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:17:51 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:17:51 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:17:56 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:17:56 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:18:04 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:18:04 Error: [Error] Call to a member function newEntity() on boolean in /home/obd/systemrecp/src/Controller/ComprovantesController.php on line 71
+Request URL: /comprovantes/add
+Referer URL: http://localhost:8765/comprovantes/add
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\ComprovantesController->add()
+#1 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#2 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ComprovantesController))
+#3 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/obd/systemrecp/webroot/index.php(37): Cake\Http\Server->run()
+#14 {main}
+
+
+2017-05-26 17:18:06 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:18:34 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:18:42 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:18:42 Error: [Error] Call to a member function newEntity() on boolean in /home/obd/systemrecp/src/Controller/ComprovantesController.php on line 71
+Request URL: /comprovantes/add
+Referer URL: http://localhost:8765/comprovantes/add
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\ComprovantesController->add()
+#1 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#2 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ComprovantesController))
+#3 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/obd/systemrecp/webroot/index.php(37): Cake\Http\Server->run()
+#14 {main}
+
+
+2017-05-26 17:18:47 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:18:52 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:18:56 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:18:56 Error: [RuntimeException] ExistsIn rule for 'boleto_id' is invalid. 'Boletos' is not associated with 'App\Model\Table\ComprovantesTable'.
+Request URL: /comprovantes/add
+Referer URL: http://localhost:8765/comprovantes/add
+Stack Trace:
+#0 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RuleInvoker.php(115): Cake\ORM\Rule\ExistsIn->__invoke(Object(App\Model\Entity\Comprovante), Array)
+#1 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(298): Cake\Datasource\RuleInvoker->__invoke(Object(App\Model\Entity\Comprovante), Array)
+#2 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(255): Cake\Datasource\RulesChecker->_checkRules(Object(App\Model\Entity\Comprovante), Array, Array)
+#3 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(231): Cake\Datasource\RulesChecker->checkCreate(Object(App\Model\Entity\Comprovante), Array)
+#4 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesAwareTrait.php(66): Cake\Datasource\RulesChecker->check(Object(App\Model\Entity\Comprovante), 'create', Array)
+#5 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1784): Cake\ORM\Table->checkRules(Object(App\Model\Entity\Comprovante), 'create', Object(ArrayObject))
+#6 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1723): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Comprovante), Object(ArrayObject))
+#7 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1446): Cake\ORM\Table->Cake\ORM\{closure}()
+#8 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Database/Connection.php(680): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#9 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1447): Cake\Database\Connection->transactional(Object(Closure))
+#10 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1724): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#11 /home/obd/systemrecp/src/Controller/ComprovantesController.php(90): Cake\ORM\Table->save(Object(App\Model\Entity\Comprovante))
+#12 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\ComprovantesController->add()
+#13 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#14 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ComprovantesController))
+#15 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 /home/obd/systemrecp/webroot/index.php(37): Cake\Http\Server->run()
+#26 {main}
+
+
+2017-05-26 17:19:04 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:19:13 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:19:13 Error: [RuntimeException] ExistsIn rule for 'boleto_id' is invalid. 'Boletos' is not associated with 'App\Model\Table\ComprovantesTable'.
+Request URL: /comprovantes/add
+Referer URL: http://localhost:8765/comprovantes/add
+Stack Trace:
+#0 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RuleInvoker.php(115): Cake\ORM\Rule\ExistsIn->__invoke(Object(App\Model\Entity\Comprovante), Array)
+#1 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(298): Cake\Datasource\RuleInvoker->__invoke(Object(App\Model\Entity\Comprovante), Array)
+#2 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(255): Cake\Datasource\RulesChecker->_checkRules(Object(App\Model\Entity\Comprovante), Array, Array)
+#3 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(231): Cake\Datasource\RulesChecker->checkCreate(Object(App\Model\Entity\Comprovante), Array)
+#4 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesAwareTrait.php(66): Cake\Datasource\RulesChecker->check(Object(App\Model\Entity\Comprovante), 'create', Array)
+#5 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1784): Cake\ORM\Table->checkRules(Object(App\Model\Entity\Comprovante), 'create', Object(ArrayObject))
+#6 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1723): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Comprovante), Object(ArrayObject))
+#7 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1446): Cake\ORM\Table->Cake\ORM\{closure}()
+#8 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Database/Connection.php(680): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#9 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1447): Cake\Database\Connection->transactional(Object(Closure))
+#10 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1724): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#11 /home/obd/systemrecp/src/Controller/ComprovantesController.php(90): Cake\ORM\Table->save(Object(App\Model\Entity\Comprovante))
+#12 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\ComprovantesController->add()
+#13 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#14 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ComprovantesController))
+#15 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 /home/obd/systemrecp/webroot/index.php(37): Cake\Http\Server->run()
+#26 {main}
+
+
+2017-05-26 17:19:15 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:19:21 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:19:21 Error: [RuntimeException] ExistsIn rule for 'boleto_id' is invalid. 'Boletos' is not associated with 'App\Model\Table\ComprovantesTable'.
+Request URL: /comprovantes/add
+Referer URL: http://localhost:8765/comprovantes/add
+Stack Trace:
+#0 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RuleInvoker.php(115): Cake\ORM\Rule\ExistsIn->__invoke(Object(App\Model\Entity\Comprovante), Array)
+#1 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(298): Cake\Datasource\RuleInvoker->__invoke(Object(App\Model\Entity\Comprovante), Array)
+#2 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(255): Cake\Datasource\RulesChecker->_checkRules(Object(App\Model\Entity\Comprovante), Array, Array)
+#3 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(231): Cake\Datasource\RulesChecker->checkCreate(Object(App\Model\Entity\Comprovante), Array)
+#4 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesAwareTrait.php(66): Cake\Datasource\RulesChecker->check(Object(App\Model\Entity\Comprovante), 'create', Array)
+#5 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1784): Cake\ORM\Table->checkRules(Object(App\Model\Entity\Comprovante), 'create', Object(ArrayObject))
+#6 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1723): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Comprovante), Object(ArrayObject))
+#7 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1446): Cake\ORM\Table->Cake\ORM\{closure}()
+#8 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Database/Connection.php(680): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#9 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1447): Cake\Database\Connection->transactional(Object(Closure))
+#10 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1724): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#11 /home/obd/systemrecp/src/Controller/ComprovantesController.php(90): Cake\ORM\Table->save(Object(App\Model\Entity\Comprovante))
+#12 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\ComprovantesController->add()
+#13 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#14 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ComprovantesController))
+#15 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 /home/obd/systemrecp/webroot/index.php(37): Cake\Http\Server->run()
+#26 {main}
+
+
+2017-05-26 17:19:24 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:19:29 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:19:37 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:19:41 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:19:41 Error: [RuntimeException] ExistsIn rule for 'boleto_id' is invalid. 'Boletos' is not associated with 'App\Model\Table\ComprovantesTable'.
+Request URL: /comprovantes/add
+Referer URL: http://localhost:8765/comprovantes/add
+Stack Trace:
+#0 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RuleInvoker.php(115): Cake\ORM\Rule\ExistsIn->__invoke(Object(App\Model\Entity\Comprovante), Array)
+#1 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(298): Cake\Datasource\RuleInvoker->__invoke(Object(App\Model\Entity\Comprovante), Array)
+#2 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(255): Cake\Datasource\RulesChecker->_checkRules(Object(App\Model\Entity\Comprovante), Array, Array)
+#3 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(231): Cake\Datasource\RulesChecker->checkCreate(Object(App\Model\Entity\Comprovante), Array)
+#4 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesAwareTrait.php(66): Cake\Datasource\RulesChecker->check(Object(App\Model\Entity\Comprovante), 'create', Array)
+#5 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1784): Cake\ORM\Table->checkRules(Object(App\Model\Entity\Comprovante), 'create', Object(ArrayObject))
+#6 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1723): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Comprovante), Object(ArrayObject))
+#7 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1446): Cake\ORM\Table->Cake\ORM\{closure}()
+#8 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Database/Connection.php(680): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#9 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1447): Cake\Database\Connection->transactional(Object(Closure))
+#10 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1724): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#11 /home/obd/systemrecp/src/Controller/ComprovantesController.php(90): Cake\ORM\Table->save(Object(App\Model\Entity\Comprovante))
+#12 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\ComprovantesController->add()
+#13 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#14 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ComprovantesController))
+#15 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 /home/obd/systemrecp/webroot/index.php(37): Cake\Http\Server->run()
+#26 {main}
+
+
+2017-05-26 17:21:24 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:21:24 Error: [RuntimeException] ExistsIn rule for 'boleto_id' is invalid. 'Boletos' is not associated with 'App\Model\Table\ComprovantesTable'.
+Request URL: /comprovantes/add
+Referer URL: http://localhost:8765/comprovantes/add
+Stack Trace:
+#0 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RuleInvoker.php(115): Cake\ORM\Rule\ExistsIn->__invoke(Object(App\Model\Entity\Comprovante), Array)
+#1 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(298): Cake\Datasource\RuleInvoker->__invoke(Object(App\Model\Entity\Comprovante), Array)
+#2 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(255): Cake\Datasource\RulesChecker->_checkRules(Object(App\Model\Entity\Comprovante), Array, Array)
+#3 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(231): Cake\Datasource\RulesChecker->checkCreate(Object(App\Model\Entity\Comprovante), Array)
+#4 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesAwareTrait.php(66): Cake\Datasource\RulesChecker->check(Object(App\Model\Entity\Comprovante), 'create', Array)
+#5 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1784): Cake\ORM\Table->checkRules(Object(App\Model\Entity\Comprovante), 'create', Object(ArrayObject))
+#6 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1723): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Comprovante), Object(ArrayObject))
+#7 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1446): Cake\ORM\Table->Cake\ORM\{closure}()
+#8 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Database/Connection.php(680): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#9 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1447): Cake\Database\Connection->transactional(Object(Closure))
+#10 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1724): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#11 /home/obd/systemrecp/src/Controller/ComprovantesController.php(90): Cake\ORM\Table->save(Object(App\Model\Entity\Comprovante))
+#12 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\ComprovantesController->add()
+#13 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#14 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ComprovantesController))
+#15 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 /home/obd/systemrecp/webroot/index.php(37): Cake\Http\Server->run()
+#26 {main}
+
+
+2017-05-26 17:22:08 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:22:08 Error: [RuntimeException] ExistsIn rule for 'boleto_id' is invalid. 'Boletos' is not associated with 'App\Model\Table\ComprovantesTable'.
+Request URL: /comprovantes/add
+Referer URL: http://localhost:8765/comprovantes/add
+Stack Trace:
+#0 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RuleInvoker.php(115): Cake\ORM\Rule\ExistsIn->__invoke(Object(App\Model\Entity\Comprovante), Array)
+#1 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(298): Cake\Datasource\RuleInvoker->__invoke(Object(App\Model\Entity\Comprovante), Array)
+#2 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(255): Cake\Datasource\RulesChecker->_checkRules(Object(App\Model\Entity\Comprovante), Array, Array)
+#3 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(231): Cake\Datasource\RulesChecker->checkCreate(Object(App\Model\Entity\Comprovante), Array)
+#4 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesAwareTrait.php(66): Cake\Datasource\RulesChecker->check(Object(App\Model\Entity\Comprovante), 'create', Array)
+#5 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1784): Cake\ORM\Table->checkRules(Object(App\Model\Entity\Comprovante), 'create', Object(ArrayObject))
+#6 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1723): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Comprovante), Object(ArrayObject))
+#7 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1446): Cake\ORM\Table->Cake\ORM\{closure}()
+#8 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Database/Connection.php(680): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#9 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1447): Cake\Database\Connection->transactional(Object(Closure))
+#10 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1724): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#11 /home/obd/systemrecp/src/Controller/ComprovantesController.php(90): Cake\ORM\Table->save(Object(App\Model\Entity\Comprovante))
+#12 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\ComprovantesController->add()
+#13 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#14 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ComprovantesController))
+#15 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 /home/obd/systemrecp/webroot/index.php(37): Cake\Http\Server->run()
+#26 {main}
+
+
+2017-05-26 17:22:26 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:23:03 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:23:03 Error: [RuntimeException] ExistsIn rule for 'boleto_id' is invalid. 'Boletos' is not associated with 'App\Model\Table\ComprovantesTable'.
+Request URL: /comprovantes/add
+Referer URL: http://localhost:8765/comprovantes/add
+Stack Trace:
+#0 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RuleInvoker.php(115): Cake\ORM\Rule\ExistsIn->__invoke(Object(App\Model\Entity\Comprovante), Array)
+#1 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(298): Cake\Datasource\RuleInvoker->__invoke(Object(App\Model\Entity\Comprovante), Array)
+#2 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(255): Cake\Datasource\RulesChecker->_checkRules(Object(App\Model\Entity\Comprovante), Array, Array)
+#3 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(231): Cake\Datasource\RulesChecker->checkCreate(Object(App\Model\Entity\Comprovante), Array)
+#4 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesAwareTrait.php(66): Cake\Datasource\RulesChecker->check(Object(App\Model\Entity\Comprovante), 'create', Array)
+#5 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1784): Cake\ORM\Table->checkRules(Object(App\Model\Entity\Comprovante), 'create', Object(ArrayObject))
+#6 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1723): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Comprovante), Object(ArrayObject))
+#7 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1446): Cake\ORM\Table->Cake\ORM\{closure}()
+#8 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Database/Connection.php(680): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#9 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1447): Cake\Database\Connection->transactional(Object(Closure))
+#10 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1724): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#11 /home/obd/systemrecp/src/Controller/ComprovantesController.php(90): Cake\ORM\Table->save(Object(App\Model\Entity\Comprovante))
+#12 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\ComprovantesController->add()
+#13 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#14 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ComprovantesController))
+#15 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 /home/obd/systemrecp/webroot/index.php(37): Cake\Http\Server->run()
+#26 {main}
+
+
+2017-05-26 17:23:18 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:23:18 Error: [RuntimeException] ExistsIn rule for 'boleto_id' is invalid. 'Boletos' is not associated with 'App\Model\Table\ComprovantesTable'.
+Request URL: /comprovantes/add
+Referer URL: http://localhost:8765/comprovantes/add
+Stack Trace:
+#0 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RuleInvoker.php(115): Cake\ORM\Rule\ExistsIn->__invoke(Object(App\Model\Entity\Comprovante), Array)
+#1 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(298): Cake\Datasource\RuleInvoker->__invoke(Object(App\Model\Entity\Comprovante), Array)
+#2 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(255): Cake\Datasource\RulesChecker->_checkRules(Object(App\Model\Entity\Comprovante), Array, Array)
+#3 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(231): Cake\Datasource\RulesChecker->checkCreate(Object(App\Model\Entity\Comprovante), Array)
+#4 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesAwareTrait.php(66): Cake\Datasource\RulesChecker->check(Object(App\Model\Entity\Comprovante), 'create', Array)
+#5 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1784): Cake\ORM\Table->checkRules(Object(App\Model\Entity\Comprovante), 'create', Object(ArrayObject))
+#6 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1723): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Comprovante), Object(ArrayObject))
+#7 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1446): Cake\ORM\Table->Cake\ORM\{closure}()
+#8 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Database/Connection.php(680): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#9 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1447): Cake\Database\Connection->transactional(Object(Closure))
+#10 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1724): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#11 /home/obd/systemrecp/src/Controller/ComprovantesController.php(89): Cake\ORM\Table->save(Object(App\Model\Entity\Comprovante))
+#12 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\ComprovantesController->add()
+#13 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#14 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ComprovantesController))
+#15 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 /home/obd/systemrecp/webroot/index.php(37): Cake\Http\Server->run()
+#26 {main}
+
+
+2017-05-26 17:23:37 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:23:37 Error: [RuntimeException] ExistsIn rule for 'boleto_id' is invalid. 'Boletos' is not associated with 'App\Model\Table\ComprovantesTable'.
+Request URL: /comprovantes/add
+Referer URL: http://localhost:8765/comprovantes/add
+Stack Trace:
+#0 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RuleInvoker.php(115): Cake\ORM\Rule\ExistsIn->__invoke(Object(App\Model\Entity\Comprovante), Array)
+#1 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(298): Cake\Datasource\RuleInvoker->__invoke(Object(App\Model\Entity\Comprovante), Array)
+#2 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(255): Cake\Datasource\RulesChecker->_checkRules(Object(App\Model\Entity\Comprovante), Array, Array)
+#3 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(231): Cake\Datasource\RulesChecker->checkCreate(Object(App\Model\Entity\Comprovante), Array)
+#4 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesAwareTrait.php(66): Cake\Datasource\RulesChecker->check(Object(App\Model\Entity\Comprovante), 'create', Array)
+#5 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1784): Cake\ORM\Table->checkRules(Object(App\Model\Entity\Comprovante), 'create', Object(ArrayObject))
+#6 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1723): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Comprovante), Object(ArrayObject))
+#7 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1446): Cake\ORM\Table->Cake\ORM\{closure}()
+#8 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Database/Connection.php(680): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#9 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1447): Cake\Database\Connection->transactional(Object(Closure))
+#10 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1724): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#11 /home/obd/systemrecp/src/Controller/ComprovantesController.php(89): Cake\ORM\Table->save(Object(App\Model\Entity\Comprovante))
+#12 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\ComprovantesController->add()
+#13 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#14 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ComprovantesController))
+#15 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 /home/obd/systemrecp/webroot/index.php(37): Cake\Http\Server->run()
+#26 {main}
+
+
+2017-05-26 17:24:11 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:24:11 Error: [RuntimeException] ExistsIn rule for 'boleto_id' is invalid. 'Boletos' is not associated with 'App\Model\Table\ComprovantesTable'.
+Request URL: /comprovantes/add
+Referer URL: http://localhost:8765/comprovantes/add
+Stack Trace:
+#0 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RuleInvoker.php(115): Cake\ORM\Rule\ExistsIn->__invoke(Object(App\Model\Entity\Comprovante), Array)
+#1 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(298): Cake\Datasource\RuleInvoker->__invoke(Object(App\Model\Entity\Comprovante), Array)
+#2 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(255): Cake\Datasource\RulesChecker->_checkRules(Object(App\Model\Entity\Comprovante), Array, Array)
+#3 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(231): Cake\Datasource\RulesChecker->checkCreate(Object(App\Model\Entity\Comprovante), Array)
+#4 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesAwareTrait.php(66): Cake\Datasource\RulesChecker->check(Object(App\Model\Entity\Comprovante), 'create', Array)
+#5 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1784): Cake\ORM\Table->checkRules(Object(App\Model\Entity\Comprovante), 'create', Object(ArrayObject))
+#6 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1723): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Comprovante), Object(ArrayObject))
+#7 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1446): Cake\ORM\Table->Cake\ORM\{closure}()
+#8 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Database/Connection.php(680): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#9 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1447): Cake\Database\Connection->transactional(Object(Closure))
+#10 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1724): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#11 /home/obd/systemrecp/src/Controller/ComprovantesController.php(88): Cake\ORM\Table->save(Object(App\Model\Entity\Comprovante))
+#12 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\ComprovantesController->add()
+#13 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#14 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ComprovantesController))
+#15 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 /home/obd/systemrecp/webroot/index.php(37): Cake\Http\Server->run()
+#26 {main}
+
+
+2017-05-26 17:25:34 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:25:34 Error: Fatal Error (1): Class 'App\Controller\table' not found in [/home/obd/systemrecp/src/Controller/ComprovantesController.php, line 12]
+Request URL: /comprovantes/add
+Referer URL: http://localhost:8765/comprovantes/add
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 104
+[main] - [internal], line ??
+
+
+
+2017-05-26 17:25:34 Error: [Cake\Error\FatalErrorException] Class 'App\Controller\table' not found in /home/obd/systemrecp/src/Controller/ComprovantesController.php on line 12
+Request URL: /comprovantes/add
+Referer URL: http://localhost:8765/comprovantes/add
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(104): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'App\\Cont...', '/home/obd/syste...', 12)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-05-26 17:25:44 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:25:44 Error: Fatal Error (1): Class 'App\Controller\table' not found in [/home/obd/systemrecp/src/Controller/ComprovantesController.php, line 12]
+Request URL: /comprovantes/add
+Referer URL: http://localhost:8765/comprovantes/add
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 104
+[main] - [internal], line ??
+
+
+
+2017-05-26 17:25:44 Error: [Cake\Error\FatalErrorException] Class 'App\Controller\table' not found in /home/obd/systemrecp/src/Controller/ComprovantesController.php on line 12
+Request URL: /comprovantes/add
+Referer URL: http://localhost:8765/comprovantes/add
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(104): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'App\\Cont...', '/home/obd/syste...', 12)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-05-26 17:26:00 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:26:00 Error: [RuntimeException] ExistsIn rule for 'boleto_id' is invalid. 'Boletos' is not associated with 'App\Model\Table\ComprovantesTable'.
+Request URL: /comprovantes/add
+Referer URL: http://localhost:8765/comprovantes/add
+Stack Trace:
+#0 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RuleInvoker.php(115): Cake\ORM\Rule\ExistsIn->__invoke(Object(App\Model\Entity\Comprovante), Array)
+#1 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(298): Cake\Datasource\RuleInvoker->__invoke(Object(App\Model\Entity\Comprovante), Array)
+#2 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(255): Cake\Datasource\RulesChecker->_checkRules(Object(App\Model\Entity\Comprovante), Array, Array)
+#3 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(231): Cake\Datasource\RulesChecker->checkCreate(Object(App\Model\Entity\Comprovante), Array)
+#4 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesAwareTrait.php(66): Cake\Datasource\RulesChecker->check(Object(App\Model\Entity\Comprovante), 'create', Array)
+#5 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1784): Cake\ORM\Table->checkRules(Object(App\Model\Entity\Comprovante), 'create', Object(ArrayObject))
+#6 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1723): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Comprovante), Object(ArrayObject))
+#7 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1446): Cake\ORM\Table->Cake\ORM\{closure}()
+#8 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Database/Connection.php(680): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#9 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1447): Cake\Database\Connection->transactional(Object(Closure))
+#10 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1724): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#11 /home/obd/systemrecp/src/Controller/ComprovantesController.php(88): Cake\ORM\Table->save(Object(App\Model\Entity\Comprovante))
+#12 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\ComprovantesController->add()
+#13 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#14 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ComprovantesController))
+#15 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 /home/obd/systemrecp/webroot/index.php(37): Cake\Http\Server->run()
+#26 {main}
+
+
+2017-05-26 17:27:29 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:27:29 Error: [RuntimeException] ExistsIn rule for 'boleto_id' is invalid. 'Boletos' is not associated with 'App\Model\Table\ComprovantesTable'.
+Request URL: /comprovantes/add
+Referer URL: http://localhost:8765/comprovantes/add
+Stack Trace:
+#0 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RuleInvoker.php(115): Cake\ORM\Rule\ExistsIn->__invoke(Object(App\Model\Entity\Comprovante), Array)
+#1 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(298): Cake\Datasource\RuleInvoker->__invoke(Object(App\Model\Entity\Comprovante), Array)
+#2 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(255): Cake\Datasource\RulesChecker->_checkRules(Object(App\Model\Entity\Comprovante), Array, Array)
+#3 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(231): Cake\Datasource\RulesChecker->checkCreate(Object(App\Model\Entity\Comprovante), Array)
+#4 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesAwareTrait.php(66): Cake\Datasource\RulesChecker->check(Object(App\Model\Entity\Comprovante), 'create', Array)
+#5 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1784): Cake\ORM\Table->checkRules(Object(App\Model\Entity\Comprovante), 'create', Object(ArrayObject))
+#6 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1723): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Comprovante), Object(ArrayObject))
+#7 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1446): Cake\ORM\Table->Cake\ORM\{closure}()
+#8 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Database/Connection.php(680): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#9 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1447): Cake\Database\Connection->transactional(Object(Closure))
+#10 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1724): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#11 /home/obd/systemrecp/src/Controller/ComprovantesController.php(88): Cake\ORM\Table->save(Object(App\Model\Entity\Comprovante))
+#12 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\ComprovantesController->add()
+#13 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#14 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ComprovantesController))
+#15 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 /home/obd/systemrecp/webroot/index.php(37): Cake\Http\Server->run()
+#26 {main}
+
+
+2017-05-26 17:27:35 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:27:35 Error: [RuntimeException] ExistsIn rule for 'boleto_id' is invalid. 'Boletos' is not associated with 'App\Model\Table\ComprovantesTable'.
+Request URL: /comprovantes/add
+Referer URL: http://localhost:8765/comprovantes/add
+Stack Trace:
+#0 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RuleInvoker.php(115): Cake\ORM\Rule\ExistsIn->__invoke(Object(App\Model\Entity\Comprovante), Array)
+#1 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(298): Cake\Datasource\RuleInvoker->__invoke(Object(App\Model\Entity\Comprovante), Array)
+#2 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(255): Cake\Datasource\RulesChecker->_checkRules(Object(App\Model\Entity\Comprovante), Array, Array)
+#3 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(231): Cake\Datasource\RulesChecker->checkCreate(Object(App\Model\Entity\Comprovante), Array)
+#4 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesAwareTrait.php(66): Cake\Datasource\RulesChecker->check(Object(App\Model\Entity\Comprovante), 'create', Array)
+#5 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1784): Cake\ORM\Table->checkRules(Object(App\Model\Entity\Comprovante), 'create', Object(ArrayObject))
+#6 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1723): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Comprovante), Object(ArrayObject))
+#7 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1446): Cake\ORM\Table->Cake\ORM\{closure}()
+#8 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Database/Connection.php(680): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#9 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1447): Cake\Database\Connection->transactional(Object(Closure))
+#10 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1724): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#11 /home/obd/systemrecp/src/Controller/ComprovantesController.php(88): Cake\ORM\Table->save(Object(App\Model\Entity\Comprovante))
+#12 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\ComprovantesController->add()
+#13 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#14 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ComprovantesController))
+#15 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 /home/obd/systemrecp/webroot/index.php(37): Cake\Http\Server->run()
+#26 {main}
+
+
+2017-05-26 17:27:39 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:27:40 Error: [RuntimeException] ExistsIn rule for 'boleto_id' is invalid. 'Boletos' is not associated with 'App\Model\Table\ComprovantesTable'.
+Request URL: /comprovantes/add
+Referer URL: http://localhost:8765/comprovantes/add
+Stack Trace:
+#0 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RuleInvoker.php(115): Cake\ORM\Rule\ExistsIn->__invoke(Object(App\Model\Entity\Comprovante), Array)
+#1 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(298): Cake\Datasource\RuleInvoker->__invoke(Object(App\Model\Entity\Comprovante), Array)
+#2 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(255): Cake\Datasource\RulesChecker->_checkRules(Object(App\Model\Entity\Comprovante), Array, Array)
+#3 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(231): Cake\Datasource\RulesChecker->checkCreate(Object(App\Model\Entity\Comprovante), Array)
+#4 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesAwareTrait.php(66): Cake\Datasource\RulesChecker->check(Object(App\Model\Entity\Comprovante), 'create', Array)
+#5 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1784): Cake\ORM\Table->checkRules(Object(App\Model\Entity\Comprovante), 'create', Object(ArrayObject))
+#6 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1723): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Comprovante), Object(ArrayObject))
+#7 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1446): Cake\ORM\Table->Cake\ORM\{closure}()
+#8 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Database/Connection.php(680): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#9 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1447): Cake\Database\Connection->transactional(Object(Closure))
+#10 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1724): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#11 /home/obd/systemrecp/src/Controller/ComprovantesController.php(88): Cake\ORM\Table->save(Object(App\Model\Entity\Comprovante))
+#12 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\ComprovantesController->add()
+#13 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#14 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ComprovantesController))
+#15 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 /home/obd/systemrecp/webroot/index.php(37): Cake\Http\Server->run()
+#26 {main}
+
+
+2017-05-26 17:30:30 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:30:30 Error: [RuntimeException] ExistsIn rule for 'recibo_id' is invalid. 'Recibos' is not associated with 'App\Model\Table\ComprovantesTable'.
+Request URL: /comprovantes/add
+Referer URL: http://localhost:8765/comprovantes/add
+Stack Trace:
+#0 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RuleInvoker.php(115): Cake\ORM\Rule\ExistsIn->__invoke(Object(App\Model\Entity\Comprovante), Array)
+#1 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(298): Cake\Datasource\RuleInvoker->__invoke(Object(App\Model\Entity\Comprovante), Array)
+#2 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(255): Cake\Datasource\RulesChecker->_checkRules(Object(App\Model\Entity\Comprovante), Array, Array)
+#3 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(231): Cake\Datasource\RulesChecker->checkCreate(Object(App\Model\Entity\Comprovante), Array)
+#4 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesAwareTrait.php(66): Cake\Datasource\RulesChecker->check(Object(App\Model\Entity\Comprovante), 'create', Array)
+#5 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1784): Cake\ORM\Table->checkRules(Object(App\Model\Entity\Comprovante), 'create', Object(ArrayObject))
+#6 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1723): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Comprovante), Object(ArrayObject))
+#7 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1446): Cake\ORM\Table->Cake\ORM\{closure}()
+#8 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Database/Connection.php(680): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#9 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1447): Cake\Database\Connection->transactional(Object(Closure))
+#10 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1724): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#11 /home/obd/systemrecp/src/Controller/ComprovantesController.php(88): Cake\ORM\Table->save(Object(App\Model\Entity\Comprovante))
+#12 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\ComprovantesController->add()
+#13 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#14 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ComprovantesController))
+#15 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 /home/obd/systemrecp/webroot/index.php(37): Cake\Http\Server->run()
+#26 {main}
+
+
+2017-05-26 17:30:44 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:30:44 Error: [RuntimeException] ExistsIn rule for 'recibo_id' is invalid. 'recibo_id' is not associated with 'App\Model\Table\ComprovantesTable'.
+Request URL: /comprovantes/add
+Referer URL: http://localhost:8765/comprovantes/add
+Stack Trace:
+#0 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RuleInvoker.php(115): Cake\ORM\Rule\ExistsIn->__invoke(Object(App\Model\Entity\Comprovante), Array)
+#1 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(298): Cake\Datasource\RuleInvoker->__invoke(Object(App\Model\Entity\Comprovante), Array)
+#2 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(255): Cake\Datasource\RulesChecker->_checkRules(Object(App\Model\Entity\Comprovante), Array, Array)
+#3 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(231): Cake\Datasource\RulesChecker->checkCreate(Object(App\Model\Entity\Comprovante), Array)
+#4 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesAwareTrait.php(66): Cake\Datasource\RulesChecker->check(Object(App\Model\Entity\Comprovante), 'create', Array)
+#5 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1784): Cake\ORM\Table->checkRules(Object(App\Model\Entity\Comprovante), 'create', Object(ArrayObject))
+#6 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1723): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Comprovante), Object(ArrayObject))
+#7 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1446): Cake\ORM\Table->Cake\ORM\{closure}()
+#8 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Database/Connection.php(680): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#9 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1447): Cake\Database\Connection->transactional(Object(Closure))
+#10 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1724): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#11 /home/obd/systemrecp/src/Controller/ComprovantesController.php(88): Cake\ORM\Table->save(Object(App\Model\Entity\Comprovante))
+#12 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\ComprovantesController->add()
+#13 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#14 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ComprovantesController))
+#15 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 /home/obd/systemrecp/webroot/index.php(37): Cake\Http\Server->run()
+#26 {main}
+
+
+2017-05-26 17:30:52 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:30:52 Error: [RuntimeException] ExistsIn rule for 'recibo_id' is invalid. 'recibos' is not associated with 'App\Model\Table\ComprovantesTable'.
+Request URL: /comprovantes/add
+Referer URL: http://localhost:8765/comprovantes/add
+Stack Trace:
+#0 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RuleInvoker.php(115): Cake\ORM\Rule\ExistsIn->__invoke(Object(App\Model\Entity\Comprovante), Array)
+#1 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(298): Cake\Datasource\RuleInvoker->__invoke(Object(App\Model\Entity\Comprovante), Array)
+#2 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(255): Cake\Datasource\RulesChecker->_checkRules(Object(App\Model\Entity\Comprovante), Array, Array)
+#3 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(231): Cake\Datasource\RulesChecker->checkCreate(Object(App\Model\Entity\Comprovante), Array)
+#4 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesAwareTrait.php(66): Cake\Datasource\RulesChecker->check(Object(App\Model\Entity\Comprovante), 'create', Array)
+#5 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1784): Cake\ORM\Table->checkRules(Object(App\Model\Entity\Comprovante), 'create', Object(ArrayObject))
+#6 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1723): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Comprovante), Object(ArrayObject))
+#7 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1446): Cake\ORM\Table->Cake\ORM\{closure}()
+#8 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Database/Connection.php(680): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#9 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1447): Cake\Database\Connection->transactional(Object(Closure))
+#10 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1724): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#11 /home/obd/systemrecp/src/Controller/ComprovantesController.php(88): Cake\ORM\Table->save(Object(App\Model\Entity\Comprovante))
+#12 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\ComprovantesController->add()
+#13 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#14 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ComprovantesController))
+#15 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 /home/obd/systemrecp/webroot/index.php(37): Cake\Http\Server->run()
+#26 {main}
+
+
+2017-05-26 17:31:05 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:31:05 Error: [RuntimeException] ExistsIn rule for 'recibo_id' is invalid. 'Recibos' is not associated with 'App\Model\Table\ComprovantesTable'.
+Request URL: /comprovantes/add
+Referer URL: http://localhost:8765/comprovantes/add
+Stack Trace:
+#0 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RuleInvoker.php(115): Cake\ORM\Rule\ExistsIn->__invoke(Object(App\Model\Entity\Comprovante), Array)
+#1 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(298): Cake\Datasource\RuleInvoker->__invoke(Object(App\Model\Entity\Comprovante), Array)
+#2 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(255): Cake\Datasource\RulesChecker->_checkRules(Object(App\Model\Entity\Comprovante), Array, Array)
+#3 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(231): Cake\Datasource\RulesChecker->checkCreate(Object(App\Model\Entity\Comprovante), Array)
+#4 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesAwareTrait.php(66): Cake\Datasource\RulesChecker->check(Object(App\Model\Entity\Comprovante), 'create', Array)
+#5 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1784): Cake\ORM\Table->checkRules(Object(App\Model\Entity\Comprovante), 'create', Object(ArrayObject))
+#6 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1723): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Comprovante), Object(ArrayObject))
+#7 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1446): Cake\ORM\Table->Cake\ORM\{closure}()
+#8 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Database/Connection.php(680): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#9 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1447): Cake\Database\Connection->transactional(Object(Closure))
+#10 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1724): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#11 /home/obd/systemrecp/src/Controller/ComprovantesController.php(88): Cake\ORM\Table->save(Object(App\Model\Entity\Comprovante))
+#12 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\ComprovantesController->add()
+#13 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#14 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ComprovantesController))
+#15 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 /home/obd/systemrecp/webroot/index.php(37): Cake\Http\Server->run()
+#26 {main}
+
+
+2017-05-26 17:31:25 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:31:25 Error: [RuntimeException] ExistsIn rule for 'recibo_id' is invalid. 'Recibos' is not associated with 'App\Model\Table\ComprovantesTable'.
+Request URL: /comprovantes/add
+Referer URL: http://localhost:8765/comprovantes/add
+Stack Trace:
+#0 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RuleInvoker.php(115): Cake\ORM\Rule\ExistsIn->__invoke(Object(App\Model\Entity\Comprovante), Array)
+#1 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(298): Cake\Datasource\RuleInvoker->__invoke(Object(App\Model\Entity\Comprovante), Array)
+#2 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(255): Cake\Datasource\RulesChecker->_checkRules(Object(App\Model\Entity\Comprovante), Array, Array)
+#3 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(231): Cake\Datasource\RulesChecker->checkCreate(Object(App\Model\Entity\Comprovante), Array)
+#4 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesAwareTrait.php(66): Cake\Datasource\RulesChecker->check(Object(App\Model\Entity\Comprovante), 'create', Array)
+#5 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1784): Cake\ORM\Table->checkRules(Object(App\Model\Entity\Comprovante), 'create', Object(ArrayObject))
+#6 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1723): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Comprovante), Object(ArrayObject))
+#7 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1446): Cake\ORM\Table->Cake\ORM\{closure}()
+#8 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Database/Connection.php(680): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#9 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1447): Cake\Database\Connection->transactional(Object(Closure))
+#10 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1724): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#11 /home/obd/systemrecp/src/Controller/ComprovantesController.php(88): Cake\ORM\Table->save(Object(App\Model\Entity\Comprovante))
+#12 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\ComprovantesController->add()
+#13 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#14 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ComprovantesController))
+#15 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 /home/obd/systemrecp/webroot/index.php(37): Cake\Http\Server->run()
+#26 {main}
+
+
+2017-05-26 17:31:31 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:31:31 Error: [RuntimeException] ExistsIn rule for 'recibo_id' is invalid. 'Recibos' is not associated with 'App\Model\Table\ComprovantesTable'.
+Request URL: /comprovantes/add
+Referer URL: http://localhost:8765/comprovantes/add
+Stack Trace:
+#0 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RuleInvoker.php(115): Cake\ORM\Rule\ExistsIn->__invoke(Object(App\Model\Entity\Comprovante), Array)
+#1 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(298): Cake\Datasource\RuleInvoker->__invoke(Object(App\Model\Entity\Comprovante), Array)
+#2 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(255): Cake\Datasource\RulesChecker->_checkRules(Object(App\Model\Entity\Comprovante), Array, Array)
+#3 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(231): Cake\Datasource\RulesChecker->checkCreate(Object(App\Model\Entity\Comprovante), Array)
+#4 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesAwareTrait.php(66): Cake\Datasource\RulesChecker->check(Object(App\Model\Entity\Comprovante), 'create', Array)
+#5 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1784): Cake\ORM\Table->checkRules(Object(App\Model\Entity\Comprovante), 'create', Object(ArrayObject))
+#6 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1723): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Comprovante), Object(ArrayObject))
+#7 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1446): Cake\ORM\Table->Cake\ORM\{closure}()
+#8 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Database/Connection.php(680): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#9 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1447): Cake\Database\Connection->transactional(Object(Closure))
+#10 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1724): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#11 /home/obd/systemrecp/src/Controller/ComprovantesController.php(88): Cake\ORM\Table->save(Object(App\Model\Entity\Comprovante))
+#12 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\ComprovantesController->add()
+#13 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#14 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ComprovantesController))
+#15 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 /home/obd/systemrecp/webroot/index.php(37): Cake\Http\Server->run()
+#26 {main}
+
+
+2017-05-26 17:31:36 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:31:36 Error: [RuntimeException] ExistsIn rule for 'recibo_id' is invalid. 'Recibos' is not associated with 'App\Model\Table\ComprovantesTable'.
+Request URL: /comprovantes/add
+Referer URL: http://localhost:8765/comprovantes/add
+Stack Trace:
+#0 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RuleInvoker.php(115): Cake\ORM\Rule\ExistsIn->__invoke(Object(App\Model\Entity\Comprovante), Array)
+#1 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(298): Cake\Datasource\RuleInvoker->__invoke(Object(App\Model\Entity\Comprovante), Array)
+#2 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(255): Cake\Datasource\RulesChecker->_checkRules(Object(App\Model\Entity\Comprovante), Array, Array)
+#3 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(231): Cake\Datasource\RulesChecker->checkCreate(Object(App\Model\Entity\Comprovante), Array)
+#4 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesAwareTrait.php(66): Cake\Datasource\RulesChecker->check(Object(App\Model\Entity\Comprovante), 'create', Array)
+#5 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1784): Cake\ORM\Table->checkRules(Object(App\Model\Entity\Comprovante), 'create', Object(ArrayObject))
+#6 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1723): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Comprovante), Object(ArrayObject))
+#7 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1446): Cake\ORM\Table->Cake\ORM\{closure}()
+#8 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Database/Connection.php(680): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#9 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1447): Cake\Database\Connection->transactional(Object(Closure))
+#10 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1724): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#11 /home/obd/systemrecp/src/Controller/ComprovantesController.php(88): Cake\ORM\Table->save(Object(App\Model\Entity\Comprovante))
+#12 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\ComprovantesController->add()
+#13 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#14 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ComprovantesController))
+#15 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 /home/obd/systemrecp/webroot/index.php(37): Cake\Http\Server->run()
+#26 {main}
+
+
+2017-05-26 17:32:24 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:32:24 Error: [RuntimeException] ExistsIn rule for 'recibo_id' is invalid. 'Recibos' is not associated with 'App\Model\Table\ComprovantesTable'.
+Request URL: /comprovantes/add
+Referer URL: http://localhost:8765/comprovantes/add
+Stack Trace:
+#0 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RuleInvoker.php(115): Cake\ORM\Rule\ExistsIn->__invoke(Object(App\Model\Entity\Comprovante), Array)
+#1 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(298): Cake\Datasource\RuleInvoker->__invoke(Object(App\Model\Entity\Comprovante), Array)
+#2 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(255): Cake\Datasource\RulesChecker->_checkRules(Object(App\Model\Entity\Comprovante), Array, Array)
+#3 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(231): Cake\Datasource\RulesChecker->checkCreate(Object(App\Model\Entity\Comprovante), Array)
+#4 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesAwareTrait.php(66): Cake\Datasource\RulesChecker->check(Object(App\Model\Entity\Comprovante), 'create', Array)
+#5 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1784): Cake\ORM\Table->checkRules(Object(App\Model\Entity\Comprovante), 'create', Object(ArrayObject))
+#6 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1723): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Comprovante), Object(ArrayObject))
+#7 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1446): Cake\ORM\Table->Cake\ORM\{closure}()
+#8 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Database/Connection.php(680): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#9 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1447): Cake\Database\Connection->transactional(Object(Closure))
+#10 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1724): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#11 /home/obd/systemrecp/src/Controller/ComprovantesController.php(88): Cake\ORM\Table->save(Object(App\Model\Entity\Comprovante))
+#12 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\ComprovantesController->add()
+#13 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#14 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ComprovantesController))
+#15 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 /home/obd/systemrecp/webroot/index.php(37): Cake\Http\Server->run()
+#26 {main}
+
+
+2017-05-26 17:34:11 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:34:11 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:34:43 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:34:45 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:35:34 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:35:39 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:35:39 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:35:45 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:35:45 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:35:48 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:35:48 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:35:50 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:35:50 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:35:52 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:35:52 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:35:54 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:35:54 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:35:57 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:35:57 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:35:59 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:35:59 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:36:01 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:36:01 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:36:03 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:36:05 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:36:08 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:36:08 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:36:12 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:36:12 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:36:14 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:36:14 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:36:17 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:36:17 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:36:19 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:36:19 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:36:25 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:36:25 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:36:31 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:36:31 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:36:34 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:36:34 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:36:36 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:36:36 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:37:01 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:37:07 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:37:07 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:37:09 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:37:09 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:37:11 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:37:11 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:37:14 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:37:14 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:37:16 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:37:16 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:37:18 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:37:18 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:37:21 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:37:21 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:37:23 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:37:24 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:37:26 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:37:26 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:37:28 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:37:28 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:37:40 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:37:43 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:37:48 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:37:48 Error: [RuntimeException] ExistsIn rule for 'user_id' is invalid. 'Recibos' is not associated with 'App\Model\Table\ComprovantesTable'.
+Request URL: /comprovantes/add
+Referer URL: http://localhost:8765/comprovantes/add
+Stack Trace:
+#0 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RuleInvoker.php(115): Cake\ORM\Rule\ExistsIn->__invoke(Object(App\Model\Entity\Comprovante), Array)
+#1 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(298): Cake\Datasource\RuleInvoker->__invoke(Object(App\Model\Entity\Comprovante), Array)
+#2 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(255): Cake\Datasource\RulesChecker->_checkRules(Object(App\Model\Entity\Comprovante), Array, Array)
+#3 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(231): Cake\Datasource\RulesChecker->checkCreate(Object(App\Model\Entity\Comprovante), Array)
+#4 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesAwareTrait.php(66): Cake\Datasource\RulesChecker->check(Object(App\Model\Entity\Comprovante), 'create', Array)
+#5 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1784): Cake\ORM\Table->checkRules(Object(App\Model\Entity\Comprovante), 'create', Object(ArrayObject))
+#6 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1723): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Comprovante), Object(ArrayObject))
+#7 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1446): Cake\ORM\Table->Cake\ORM\{closure}()
+#8 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Database/Connection.php(680): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#9 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1447): Cake\Database\Connection->transactional(Object(Closure))
+#10 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1724): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#11 /home/obd/systemrecp/src/Controller/ComprovantesController.php(88): Cake\ORM\Table->save(Object(App\Model\Entity\Comprovante))
+#12 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\ComprovantesController->add()
+#13 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#14 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ComprovantesController))
+#15 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 /home/obd/systemrecp/webroot/index.php(37): Cake\Http\Server->run()
+#26 {main}
+
+
+2017-05-26 17:37:59 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:38:05 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:38:09 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:38:22 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:38:24 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:38:36 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:38:39 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:41:54 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:41:56 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:41:58 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:42:06 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:42:06 Error: [RuntimeException] ExistsIn rule for 'user_id' is invalid. 'comprovantes' is not associated with 'App\Model\Table\ComprovantesTable'.
+Request URL: /comprovantes/add
+Referer URL: http://localhost:8765/comprovantes/add
+Stack Trace:
+#0 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RuleInvoker.php(115): Cake\ORM\Rule\ExistsIn->__invoke(Object(App\Model\Entity\Comprovante), Array)
+#1 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(298): Cake\Datasource\RuleInvoker->__invoke(Object(App\Model\Entity\Comprovante), Array)
+#2 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(255): Cake\Datasource\RulesChecker->_checkRules(Object(App\Model\Entity\Comprovante), Array, Array)
+#3 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(231): Cake\Datasource\RulesChecker->checkCreate(Object(App\Model\Entity\Comprovante), Array)
+#4 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Datasource/RulesAwareTrait.php(66): Cake\Datasource\RulesChecker->check(Object(App\Model\Entity\Comprovante), 'create', Array)
+#5 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1784): Cake\ORM\Table->checkRules(Object(App\Model\Entity\Comprovante), 'create', Object(ArrayObject))
+#6 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1723): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Comprovante), Object(ArrayObject))
+#7 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1446): Cake\ORM\Table->Cake\ORM\{closure}()
+#8 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Database/Connection.php(680): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#9 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1447): Cake\Database\Connection->transactional(Object(Closure))
+#10 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1724): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#11 /home/obd/systemrecp/src/Controller/ComprovantesController.php(88): Cake\ORM\Table->save(Object(App\Model\Entity\Comprovante))
+#12 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\ComprovantesController->add()
+#13 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#14 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ComprovantesController))
+#15 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 /home/obd/systemrecp/webroot/index.php(37): Cake\Http\Server->run()
+#26 {main}
+
+
+2017-05-26 17:43:24 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:43:32 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:44:42 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:44:50 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:45:16 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:45:21 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:45:41 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:45:46 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:45:52 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:59:16 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:59:24 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 17:59:56 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 18:00:15 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 18:08:14 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 18:08:15 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 18:08:36 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 18:08:41 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 18:09:07 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 18:09:11 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 18:09:15 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 18:09:37 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 18:09:43 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 18:10:41 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 18:10:43 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 18:10:43 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 18:10:45 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 18:10:47 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 18:10:48 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 18:10:52 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 18:11:28 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 18:11:35 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 18:11:59 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 18:12:15 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 18:12:47 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 18:12:52 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 18:14:16 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 18:15:57 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 18:17:54 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 18:18:01 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 18:19:18 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 18:19:31 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 18:22:24 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 18:22:42 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 18:22:50 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 18:23:33 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 18:24:23 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 18:25:33 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 18:26:07 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 18:26:07 Error: [ParseError] syntax error, unexpected 'public' (T_PUBLIC) in /home/obd/systemrecp/src/Controller/ComprovantesController.php on line 114
+Request URL: /comprovantes/add
+Referer URL: http://localhost:8765/comprovantes/add
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/obd/systemrecp/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/obd/syste...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 [internal function]: spl_autoload_call('App\\Controller\\...')
+#3 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Core/App.php(152): class_exists('App\\Controller\\...')
+#4 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Core/App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Com...', 'App')
+#5 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(68): Cake\Core\App::className('Comprovantes', 'Controller', 'Controller')
+#6 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /home/obd/systemrecp/webroot/index.php(37): Cake\Http\Server->run()
+#18 {main}
+
+
+2017-05-26 18:26:14 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 18:26:25 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 18:26:25 Error: [ParseError] syntax error, unexpected 'public' (T_PUBLIC) in /home/obd/systemrecp/src/Controller/ComprovantesController.php on line 113
+Request URL: /comprovantes/add
+Referer URL: http://localhost:8765/comprovantes/add
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/obd/systemrecp/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/obd/syste...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 [internal function]: spl_autoload_call('App\\Controller\\...')
+#3 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Core/App.php(152): class_exists('App\\Controller\\...')
+#4 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Core/App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Com...', 'App')
+#5 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(68): Cake\Core\App::className('Comprovantes', 'Controller', 'Controller')
+#6 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /home/obd/systemrecp/webroot/index.php(37): Cake\Http\Server->run()
+#18 {main}
+
+
+2017-05-26 18:29:28 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 18:29:35 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 18:35:38 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 18:35:38 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'status' doesn't have a default value
+Request URL: /comprovantes/add
+Referer URL: http://localhost:8765/comprovantes/add
+Stack Trace:
+#0 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Database/Connection.php(313): Cake\Database\Statement\MysqlStatement->execute()
+#2 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Database/Query.php(213): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#3 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1916): Cake\Database\Query->execute()
+#4 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1810): Cake\ORM\Table->_insert(Object(App\Model\Entity\File), Array)
+#5 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1723): Cake\ORM\Table->_processSave(Object(App\Model\Entity\File), Object(ArrayObject))
+#6 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1446): Cake\ORM\Table->Cake\ORM\{closure}()
+#7 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Database/Connection.php(680): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#8 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1447): Cake\Database\Connection->transactional(Object(Closure))
+#9 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1724): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#10 /home/obd/systemrecp/src/Controller/ComprovantesController.php(75): Cake\ORM\Table->save(Object(App\Model\Entity\File))
+#11 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\ComprovantesController->add()
+#12 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#13 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ComprovantesController))
+#14 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 /home/obd/systemrecp/webroot/index.php(37): Cake\Http\Server->run()
+#25 {main}
+
+
+2017-05-26 18:35:47 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 18:35:47 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'status' doesn't have a default value
+Request URL: /comprovantes/add
+Referer URL: http://localhost:8765/comprovantes/add
+Stack Trace:
+#0 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Database/Connection.php(313): Cake\Database\Statement\MysqlStatement->execute()
+#2 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Database/Query.php(213): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#3 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1916): Cake\Database\Query->execute()
+#4 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1810): Cake\ORM\Table->_insert(Object(App\Model\Entity\File), Array)
+#5 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1723): Cake\ORM\Table->_processSave(Object(App\Model\Entity\File), Object(ArrayObject))
+#6 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1446): Cake\ORM\Table->Cake\ORM\{closure}()
+#7 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Database/Connection.php(680): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#8 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1447): Cake\Database\Connection->transactional(Object(Closure))
+#9 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1724): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#10 /home/obd/systemrecp/src/Controller/ComprovantesController.php(75): Cake\ORM\Table->save(Object(App\Model\Entity\File))
+#11 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\ComprovantesController->add()
+#12 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#13 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ComprovantesController))
+#14 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 /home/obd/systemrecp/webroot/index.php(37): Cake\Http\Server->run()
+#25 {main}
+
+
+2017-05-26 18:35:54 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 18:35:54 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'status' doesn't have a default value
+Request URL: /comprovantes/add
+Referer URL: http://localhost:8765/comprovantes/add
+Stack Trace:
+#0 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Database/Connection.php(313): Cake\Database\Statement\MysqlStatement->execute()
+#2 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Database/Query.php(213): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#3 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1916): Cake\Database\Query->execute()
+#4 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1810): Cake\ORM\Table->_insert(Object(App\Model\Entity\File), Array)
+#5 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1723): Cake\ORM\Table->_processSave(Object(App\Model\Entity\File), Object(ArrayObject))
+#6 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1446): Cake\ORM\Table->Cake\ORM\{closure}()
+#7 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Database/Connection.php(680): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#8 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1447): Cake\Database\Connection->transactional(Object(Closure))
+#9 /home/obd/systemrecp/vendor/cakephp/cakephp/src/ORM/Table.php(1724): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#10 /home/obd/systemrecp/src/Controller/ComprovantesController.php(75): Cake\ORM\Table->save(Object(App\Model\Entity\File))
+#11 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\ComprovantesController->add()
+#12 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#13 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ComprovantesController))
+#14 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 /home/obd/systemrecp/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 /home/obd/systemrecp/webroot/index.php(37): Cake\Http\Server->run()
+#25 {main}
+
+
+2017-05-26 18:36:07 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 18:36:09 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-26 18:36:15 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
