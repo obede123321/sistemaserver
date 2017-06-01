@@ -55,7 +55,7 @@ class ComprovantesController extends AppController
      */
     public function add()
     {
-      
+
         $comprovante = $this->Comprovantes->newEntity();
         $comprovante = $this->Comprovantes->patchEntity($comprovante, $this->request->getData());
         if ($this->request->is('post')) {
@@ -81,29 +81,29 @@ class ComprovantesController extends AppController
                 } else {
                     $this->Flash->error(_('Please choose a file to upload.'));
                 }
-                
-                 
+
+
             }
             /* fim arquivo*/
-            
+            $comprovante->user_id = $this->Auth->user('id');
             if ($this->Comprovantes->save($comprovante)) {
                 $this->Flash->success(__('The comprovante has been saved.'));
                 return $this->redirect(['action' => 'index']);
             }
 
                 $this->Flash->error(__('The comprovante could not be saved. Please, try again.'));
-            
+
         }
-    
-        
-        $comprovante->user_id = $this->Auth->user('id');
+
+
+
         $users = $this->Comprovantes->Users->find('list', ['limit' => 200]);
         $this->set(compact('comprovante', 'users'));
         $this->set('_serialize', ['comprovante']);
             // $this->set('_serialize', ['teste']);
 }
 
-        
+
 
     /**
      * Edit method
@@ -152,6 +152,6 @@ class ComprovantesController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
-    
-  
+
+
 }

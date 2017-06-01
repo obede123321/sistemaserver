@@ -23,7 +23,7 @@
             echo $this->Form->control('pagamento');
             echo $this->Form->control('aproved');
             echo $this->Form->control('user_id', ['options' => $users]);
-            echo $this->Form->control('recibo_id', ['type' => 'file', 'class' => 'form-control']);
+            echo $this->Form->control('recibo_id', ['type' => 'file']);
         ?>
     </fieldset>
     <?= $this->Form->button(__('Upload_file'), ['type'=>'submit', 'class'=>'form-controlbnt bnt-default']);?>

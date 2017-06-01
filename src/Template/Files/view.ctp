@@ -32,8 +32,8 @@
             <td><?= h($file->created) ?></td>
         </tr>
         <tr>
-            <th scope="row"><?= __('Modificacao') ?></th>
-            <td><?= h($file->modificacao) ?></td>
+            <th scope="row"><?= __('Modified') ?></th>
+            <td><?= h($file->modified) ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Status') ?></th>

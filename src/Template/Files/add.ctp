@@ -16,7 +16,7 @@
         <?php
             echo $this->Form->control('name');
             echo $this->Form->control('path');
-            echo $this->Form->control('modificacao');
+            echo $this->Form->control('modified');
             echo $this->Form->control('status');
         ?>
     </fieldset>

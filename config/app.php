@@ -231,7 +231,7 @@ return [
             //'port' => 'non_standard_port_number',
             'username' => 'root',
             'password' => '123',
-            'database' => 'system_db',
+            'database' => 'systemrecp_db',
             'encoding' => 'utf8',
             'timezone' => 'UTC',
             'flags' => [],

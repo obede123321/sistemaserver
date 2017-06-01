@@ -23,7 +23,7 @@
                 <th scope="col"><?= $this->Paginator->sort('pagamento') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('aproved') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('user_id') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('boleto_id') ?></th>
+                <!-- <th scope="col"><?= $this->Paginator->sort('boleto_id') ?></th> -->
                 <th scope="col"><?= $this->Paginator->sort('recibo_id') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
             </tr>
@@ -35,8 +35,7 @@
                 <td><?= h($comprovante->vencimento) ?></td>
                 <td><?= h($comprovante->pagamento) ?></td>
                 <td><?= h($comprovante->aproved) ?></td>
-                <td><?= $comprovante->has('user') ? $this->Html->link($comprovante->user->id, ['controller' => 'Users', 'action' => 'view', $comprovante->user->id]) : '' ?></td>
-              <!--   <td><?= $this->Number->format($comprovante->boleto_id) ?></td> -->
+                <td><?= $comprovante->has('user') ? $this->Html->link($comprovante->user->nome, ['controller' => 'Users', 'action' => 'view', $comprovante->user->id]) : '' ?></td>
                 <td><?= $comprovante->has('file') ? $this->Html->link($comprovante->file->name, ['controller' => 'Files', 'action' => 'view', $comprovante->file->id]) : '' ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $comprovante->id]) ?>
