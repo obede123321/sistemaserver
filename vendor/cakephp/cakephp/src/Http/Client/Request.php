@@ -15,7 +15,6 @@ namespace Cake\Http\Client;
 
 use Cake\Core\Exception\Exception;
 use Psr\Http\Message\RequestInterface;
-use Zend\Diactoros\MessageTrait;
 use Zend\Diactoros\RequestTrait;
 use Zend\Diactoros\Stream;
 
@@ -27,7 +26,6 @@ use Zend\Diactoros\Stream;
  */
 class Request extends Message implements RequestInterface
 {
-    use MessageTrait;
     use RequestTrait;
 
     /**

@@ -314,7 +314,7 @@ class HtmlHelper extends Helper
         }
 
         return $this->formatTemplate('charset', [
-            'charset' => (!empty($charset) ? $charset : 'utf-8')
+            'charset' => !empty($charset) ? $charset : 'utf-8'
         ]);
     }
 
@@ -609,17 +609,17 @@ class HtmlHelper extends Helper
      *
      * ### Options
      *
-     * - `safe` Whether the code block should contain a CDATA
+     * - `safe` (boolean) Whether or not the $script should be wrapped in `<![CDATA[ ]]>`.
+     *   See scriptBlock().
      * - `block` Set to true to append output to view block "script" or provide
      *   custom block name.
      *
      * @param array $options Options for the code block.
      * @return void
-     * @link http://book.cakephp.org/3.0/en/views/helpers/html.html#creating-javascript-blocks
+     * @link http://book.cakephp.org/3.0/en/views/helpers/html.html#creating-inline-javascript-blocks
      */
     public function scriptStart(array $options = [])
     {
-        $options += ['safe' => true, 'block' => null];
         $this->_scriptBlockOptions = $options;
         ob_start();
     }
@@ -630,7 +630,7 @@ class HtmlHelper extends Helper
      * the settings used when the scriptBlock was started
      *
      * @return string|null Depending on the settings of scriptStart() either a script tag or null
-     * @link http://book.cakephp.org/3.0/en/views/helpers/html.html#creating-javascript-blocks
+     * @link http://book.cakephp.org/3.0/en/views/helpers/html.html#creating-inline-javascript-blocks
      */
     public function scriptEnd()
     {

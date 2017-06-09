@@ -176,38 +176,31 @@ return [
      * appropriate file to src/Mailer/Transport. Transports should be named
      * 'YourTransport.php', where 'Your' is the name of the transport.
      */
+
     'EmailTransport' => [
         'default' => [
-            'className' => 'Mail',
+            'className' => 'Smtp',
             // The following keys are used in SMTP transports
-            'host' => 'localhost',
-            'port' => 25,
-            'timeout' => 30,
-            'username' => 'user',
-            'password' => 'secret',
+            'host' => 'ssl://smtp.gmail.com',
+            'port' => 465,
+            'username' => 'hacker.hacker2555@gmail.com',
+            'password' => '1023456789',
             'client' => null,
             'tls' => null,
-            'url' => env('EMAIL_TRANSPORT_DEFAULT_URL', null),
         ],
     ],
 
-    /**
-     * Email delivery profiles
-     *
-     * Delivery profiles allow you to predefine various properties about email
-     * messages from your application and give the settings a name. This saves
-     * duplication across your application and makes maintenance and development
-     * easier. Each profile accepts a number of keys. See `Cake\Mailer\Email`
-     * for more information.
-     */
+
     'Email' => [
         'default' => [
             'transport' => 'default',
-            'from' => 'you@localhost',
+            'from' => 'hacker.hacker2555@gmail.com',
             //'charset' => 'utf-8',
             //'headerCharset' => 'utf-8',
         ],
     ],
+
+
 
     /**
      * Connection information used by the ORM to connect

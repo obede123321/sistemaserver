@@ -35,7 +35,7 @@ class UsersController extends AppController
                     $this->Auth->setUser($user);
                     return $this->redirect($this->Auth->redirectUrl());
                 }
-                $this->Flash->erro(_('Invalid username or password, try again'));
+                $this->Flash->error(__('Invalid username or password, try again'));
             }
         }
         public function logout()
@@ -76,8 +76,8 @@ class UsersController extends AppController
     {
         $user = $this->Users->newEntity();
         if ($this->request->is('post')) {
-            $user->role = 'servidor';
             $user = $this->Users->patchEntity($user, $this->request->getData());
+            $user->role = 'servidor';
             if ($this->Users->save($user)) {
                 $this->Flash->success(__('The user has been saved.'));
 

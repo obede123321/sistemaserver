@@ -4,6 +4,7 @@ namespace App\Controller;
 use App\Controller\AppController;
 use App\Controller\Files;
 use Cake\Event\Event;
+use Cake\Mailer\Email;
 /**
  * Comprovantes Controller
  *
@@ -55,7 +56,6 @@ class ComprovantesController extends AppController
      */
     public function add()
     {
-
         $comprovante = $this->Comprovantes->newEntity();
         $comprovante = $this->Comprovantes->patchEntity($comprovante, $this->request->getData());
         if ($this->request->is('post')) {
@@ -79,7 +79,7 @@ class ComprovantesController extends AppController
                         $this->Flash->error(__('Unable to upload file, please try again.'));
                     }
                 } else {
-                    $this->Flash->error(_('Please choose a file to upload.'));
+                    $this->Flash->error(__('Please choose a file to upload.'));
                 }
 
 
@@ -88,6 +88,18 @@ class ComprovantesController extends AppController
             $comprovante->user_id = $this->Auth->user('id');
             if ($this->Comprovantes->save($comprovante)) {
                 $this->Flash->success(__('The comprovante has been saved.'));
+
+
+            $email = new Email('default');
+                $email->from(['hacker.hacker2555@gmail.com' => 'Reitoria'])
+                ->emailFormat('html')
+                ->to('obede.silva3@gmail.com')
+                ->template('default','template')
+                ->subject('[WEB II] Exemplo de email')
+                ->viewVars(['nome' => $this->Auth->user('nome'),'id_usuario' => $this->Auth->user('id')])
+                ->send();
+
+
                 return $this->redirect(['action' => 'index']);
             }
 
@@ -101,6 +113,7 @@ class ComprovantesController extends AppController
         $this->set(compact('comprovante', 'users'));
         $this->set('_serialize', ['comprovante']);
             // $this->set('_serialize', ['teste']);
+
 }
 
 

@@ -42,7 +42,7 @@ class EagerLoader
      *
      * @var \Cake\ORM\EagerLoadable[]|\Cake\ORM\EagerLoadable|null
      */
-    protected $_normalized = null;
+    protected $_normalized;
 
     /**
      * List of options accepted by associations in contain()
@@ -497,13 +497,6 @@ class EagerLoader
                 sprintf('%s is not associated with %s', $parent->getAlias(), $alias)
             );
         }
-        if ($instance->getAlias() !== $alias) {
-            throw new InvalidArgumentException(sprintf(
-                "You have contained '%s' but that association was bound as '%s'.",
-                $alias,
-                $instance->getAlias()
-            ));
-        }
 
         $paths += ['aliasPath' => '', 'propertyPath' => '', 'root' => $alias];
         $paths['aliasPath'] .= '.' . $alias;
@@ -835,5 +828,19 @@ class EagerLoader
         $statement->rewind();
 
         return $keys;
+    }
+
+    /**
+     * Clone hook implementation
+     *
+     * Clone the _matching eager loader as well.
+     *
+     * @return void
+     */
+    public function __clone()
+    {
+        if ($this->_matching) {
+            $this->_matching = clone $this->_matching;
+        }
     }
 }
